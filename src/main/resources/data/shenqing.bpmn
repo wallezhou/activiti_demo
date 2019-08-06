@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<definitions xmlns="http://www.omg.org/spec/BPMN/20100524/MODEL" xmlns:activiti="http://activiti.org/bpmn" xmlns:bpmndi="http://www.omg.org/spec/BPMN/20100524/DI" xmlns:dc="http://www.omg.org/spec/DD/20100524/DC" xmlns:di="http://www.omg.org/spec/DD/20100524/DI" xmlns:tns="http://www.activiti.org/testm1564908397677" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" expressionLanguage="http://www.w3.org/1999/XPath" id="m1564908397677" name="" targetNamespace="http://www.activiti.org/testm1564908397677" typeLanguage="http://www.w3.org/2001/XMLSchema">
+  <process id="myProcess_1" isClosed="false" isExecutable="true" processType="None">
+    <startEvent id="shenqing" name="shenqing"/>
+    <userTask activiti:exclusive="true" id="qingjiashenqing" name="qingjiashenqing"/>
+    <userTask activiti:assignee="小毛" activiti:exclusive="true" id="banzhuren" name="banzhuren"/>
+    <userTask activiti:assignee="大毛" activiti:exclusive="true" id="jiaowuchu" name="jiaoiwuchu"/>
+    <endEvent id="_6" name="EndEvent"/>
+    <sequenceFlow id="_7" sourceRef="shenqing" targetRef="qingjiashenqing"/>
+    <sequenceFlow id="_8" sourceRef="qingjiashenqing" targetRef="banzhuren"/>
+    <sequenceFlow id="_9" sourceRef="banzhuren" targetRef="jiaowuchu"/>
+    <sequenceFlow id="_10" sourceRef="jiaowuchu" targetRef="_6"/>
+  </process>
+  <bpmndi:BPMNDiagram documentation="background=#292929;count=1;horizontalcount=1;orientation=0;width=842.4;height=1195.2;imageableWidth=832.4;imageableHeight=1185.2;imageableX=5.0;imageableY=5.0" id="Diagram-_1" name="New Diagram">
+    <bpmndi:BPMNPlane bpmnElement="myProcess_1">
+      <bpmndi:BPMNShape bpmnElement="shenqing" id="Shape-shenqing">
+        <dc:Bounds height="32.0" width="32.0" x="145.0" y="40.0"/>
+        <bpmndi:BPMNLabel>
+          <dc:Bounds height="32.0" width="32.0" x="0.0" y="0.0"/>
+        </bpmndi:BPMNLabel>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape bpmnElement="qingjiashenqing" id="Shape-qingjiashenqing">
+        <dc:Bounds height="55.0" width="85.0" x="115.0" y="125.0"/>
+        <bpmndi:BPMNLabel>
+          <dc:Bounds height="55.0" width="85.0" x="0.0" y="0.0"/>
+        </bpmndi:BPMNLabel>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape bpmnElement="banzhuren" id="Shape-banzhuren">
+        <dc:Bounds height="55.0" width="85.0" x="125.0" y="235.0"/>
+        <bpmndi:BPMNLabel>
+          <dc:Bounds height="55.0" width="85.0" x="0.0" y="0.0"/>
+        </bpmndi:BPMNLabel>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape bpmnElement="jiaowuchu" id="Shape-jiaowuchu">
+        <dc:Bounds height="55.0" width="85.0" x="125.0" y="340.0"/>
+        <bpmndi:BPMNLabel>
+          <dc:Bounds height="55.0" width="85.0" x="0.0" y="0.0"/>
+        </bpmndi:BPMNLabel>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape bpmnElement="_6" id="Shape-_6">
+        <dc:Bounds height="32.0" width="32.0" x="150.0" y="440.0"/>
+        <bpmndi:BPMNLabel>
+          <dc:Bounds height="32.0" width="32.0" x="0.0" y="0.0"/>
+        </bpmndi:BPMNLabel>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNEdge bpmnElement="_7" id="BPMNEdge__7" sourceElement="shenqing" targetElement="qingjiashenqing">
+        <di:waypoint x="161.0" y="72.0"/>
+        <di:waypoint x="161.0" y="125.0"/>
+        <bpmndi:BPMNLabel>
+          <dc:Bounds height="0.0" width="0.0" x="0.0" y="0.0"/>
+        </bpmndi:BPMNLabel>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge bpmnElement="_8" id="BPMNEdge__8" sourceElement="qingjiashenqing" targetElement="banzhuren">
+        <di:waypoint x="162.5" y="180.0"/>
+        <di:waypoint x="162.5" y="235.0"/>
+        <bpmndi:BPMNLabel>
+          <dc:Bounds height="0.0" width="0.0" x="0.0" y="0.0"/>
+        </bpmndi:BPMNLabel>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge bpmnElement="_9" id="BPMNEdge__9" sourceElement="banzhuren" targetElement="jiaowuchu">
+        <di:waypoint x="167.5" y="290.0"/>
+        <di:waypoint x="167.5" y="340.0"/>
+        <bpmndi:BPMNLabel>
+          <dc:Bounds height="0.0" width="0.0" x="0.0" y="0.0"/>
+        </bpmndi:BPMNLabel>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge bpmnElement="_10" id="BPMNEdge__10" sourceElement="jiaowuchu" targetElement="_6">
+        <di:waypoint x="166.0" y="395.0"/>
+        <di:waypoint x="166.0" y="440.0"/>
+        <bpmndi:BPMNLabel>
+          <dc:Bounds height="0.0" width="0.0" x="0.0" y="0.0"/>
+        </bpmndi:BPMNLabel>
+      </bpmndi:BPMNEdge>
+    </bpmndi:BPMNPlane>
+  </bpmndi:BPMNDiagram>
+</definitions>
